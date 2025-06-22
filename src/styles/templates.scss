@@ -1,0 +1,79 @@
+.cv-preview {
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 21cm;
+  min-height: 29.7cm;
+  padding: 2cm;
+  box-sizing: border-box;
+  width: 100%;
+  white-space: pre-wrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &.modern {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
+    color: #0d1b2a;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(13, 27, 42, 0.15);
+    /* Dodaj delikatne obramowanie */
+    border: 1px solid #a3bffa;
+
+    /* Styl nagłówków */
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 0.3em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Linki lub ważne teksty */
+    a, strong {
+      color: #274c77;
+    }
+
+    /* Akcenty */
+    hr {
+      border: none;
+      border-top: 2px solid #a3bffa;
+      margin: 1.5em 0;
+      width: 50px;
+      border-radius: 2px;
+    }
+  }
+
+  &.classic {
+    font-family: 'Georgia', serif;
+    background-color: #faf5e6;
+    color: #222222;
+    border-left: 8px solid #6b4f4f;
+    padding-left: 24px;
+    box-shadow: 0 4px 15px rgba(107, 79, 79, 0.15);
+
+    /* Dodaj subtelne tekstury lub wzory tła (opcjonalnie) */
+    /* background-image: url('data:image/svg+xml;...'); */
+
+    /* Nagłówki w stylu klasycznym */
+    h1, h2, h3, h4 {
+      font-weight: 600;
+      color: #5a3e3e;
+      margin-bottom: 0.4em;
+      border-bottom: 1px solid #d7c9b6;
+      padding-bottom: 0.3em;
+      font-style: italic;
+      font-variant: small-caps;
+    }
+
+    p, li {
+      line-height: 1.6;
+      letter-spacing: 0.03em;
+    }
+
+    hr {
+      border: none;
+      border-bottom: 1px dashed #d7c9b6;
+      margin: 1.5em 0;
+    }
+  }
+}
